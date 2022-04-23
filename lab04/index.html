@@ -1,0 +1,153 @@
+<html>
+<head>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="mystyle.css" rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <div class="topnav">
+        <span style="font-family: Lucida Sans Unicode; font-style:bold; font-size:x-large;color:#029fd8">LAB 04</span>
+      </div>
+
+
+</header>
+<div>
+  <h2 class="lineUp">
+TASK1
+  </h2>
+  <h5>Make a Calculator! using prompt(), and variables, make a program that does the following:
+    i  Prompts the user for first number.
+    ii Stores that first number
+    iii Prompts the user for the second number
+    iv Asks which operation does it want to perform  (+,-,/,*,++,--,%)
+    v Stores that result and responds with the calculated value by using an alert.
+  </h5>
+  <h5>SOLUTION :</h5>
+    <p>
+const operator = prompt('Enter operator ( either +, -, * or / ): ');<br>
+const number1 = parseFloat(prompt('Enter first number: '));<br>
+const number2 = parseFloat(prompt('Enter second number: '));<br>
+let result;<br>
+if (operator == '+')<br> {
+    result = number1 + number2;
+}<br>
+else if (operator == '-')<br> {
+    result = number1 - number2;
+}<br>
+else if (operator == '*') <br>{
+    result = number1 * number2;
+}<br>
+else<br> {
+    result = number1 / number2;
+}<br>
+console.log(`${number1} ${operator} ${number2} = ${result}`);<br>
+</p>
+<h5>OUTPUT:</h5>
+<img src="task1.png">
+</div>
+<div>
+  <div>
+    <h2 class="lineUp">TASK2</h2>
+    <h5>using this array
+      var array = ["Banana", "Apples", "Oranges", "Blueberries"];
+      1. Remove the Banana from the array.
+      2. Sort the array in order.
+      3. Put "Kiwi" at the end of the array.
+      4. Remove "Apples" from the array.
+      5. Sort the array in reverse order. (Not alphabetical, but reverse// the current Array i.e. ['a', 'c', 'b'] becomes ['b', 'c', 'a'])
+      
+    </h5>
+    <h5>SOLUTION :</h5>
+      <p>
+        // using this array,<br>
+        var array = ["Banana", "Apples", "Oranges", "Blueberries"];<br>
+        undefined<br>
+        // 1. Remove the Banana from the array.<br>
+        array.shift();<br>
+        'Banana'<br>
+        // 2. Sort the array in order.<br>
+        array.sort();<br>
+        (3) ['Apples', 'Blueberries', 'Oranges']<br>
+        // 3. Put "Kiwi" at the end of the array.<br>
+        array.push("Kiwi");<br>
+        4
+        // 4. Remove "Apples" from the array.<br>
+        array.splice(0, 1);<br>
+        ['Apples']<br>
+        // 5. Sort the array in reverse order.<br>
+        array.reverse();<br>
+        (3) ['Kiwi', 'Oranges', 'Blueberries']<br>
+        
+  </p>
+  </div>
+  <div>
+    <div>
+      <h2 class="lineUp"> TASK3</h2>
+      <h5>Alarm ringing !
+        I Suppose by default there is a prompt saying “ Alarm is ringing”. Press ‘S’ to snooze and ‘D’ to dismiss
+        II If user selects ‘D’, program will be dismissed with a prompt “Good Morning”
+        III If user select ‘S’ , the program “ Alarm is ringing”. Press ‘S’ to snooze and ‘D’ to dismiss will rerun and again the prompt will be  (repeat from step I)
+        IV upon entering wrong input program will prompt “wrong input” and program ends.
+      </h5>
+      <h5>SOLUTION :</h5>
+        <p>
+          do{        <br>
+            rep='no';  <br>                                                                                                                        
+            const msg = prompt('“ Alarm is ringing!”. Press ‘S’ to snooze and ‘D’ to dismiss: ');     <br>                                                          
+            if (msg == 'D') { <br>
+                console.log(`Good Morning`); <br>
+            } else if( msg=='S'){ rep='yes'; } <br>
+            else { <br>
+                 console.log(`Wrong input`); <br>
+            } <br>
+            }while( rep=='yes'); <br>
+            
+    </p>
+    <h5>OUTPUT:</h5>
+    <img src="task3.png">
+    </div>
+    <div>
+      <div>
+        <h2 class="lineUp">TASK4</h2>
+        <h5>Create an object and an array which we will use in our facebook exercise. 
+          Create an object that has properties "username" and "password". Fill those values in with strings.         
+        </h5>
+        <h5>SOLUTION :</h5>
+          <p>
+            var user = {<br>
+              username : "Alexandar",<br>
+              password : "knight"<br>
+            }      <br>      
+      </p>
+      <h5>    Create an array which contains the object you have made above and name the array "database".   </h5>
+      <p>
+        var database = [<br>
+	{<br>
+		username : "Alexander",<br>
+		password : "knight"<br>
+	}<br>
+]; <br>      
+  </p>
+  <h5>    Create an array called "newsfeed" which contains 3 objects with properties "username" and "timeline".</h5>
+      <p>
+        var newsfeed = [<br>
+	{	<br>
+		username : "susan",<br>
+		timeline : "zero"<br>
+	},<br>
+	{	<br>
+		username : "ahsan",<br>
+	timeline : "one"<br>
+	},{	<br>
+		username : "isabel",<br>
+		timeline : "two"<br>
+	}	<br>
+]<br>
+
+  </p>
+      </div>
+
+  </body>
+</html>
